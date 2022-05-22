@@ -6,7 +6,7 @@ function Home() {
     return (
         
             <container>
-                <Section/>
+            <Section/>
               Home
             </container>
            
