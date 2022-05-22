@@ -1,26 +1,27 @@
 import React from 'react';
 import styled  from "styled-components"
 
-function Section() {
+function Section( {title, description, leftBtnText, rightBtntext, }) {
     return (
         <Wrap>
             <ItemText>
-                <h1>Model S</h1>
-                <p>Order Online for Touchless Delivery</p>
+                <h1>{title}</h1>
+                <p>{description}</p>
             </ItemText>
 
             <Buttons>
                 <ButtonGroup>
                     
                     <LeftButton>
-                        Custom Order
+                       {leftBtnText}
                     </LeftButton>
 
                     <RightButton>
-                        Existing Inventory
+                      {rightBtntext}
                     </RightButton>                   
 
                 </ButtonGroup>
+
                 <DownArrow src = "/images/down-arrow.svg" />
             </Buttons>
         </Wrap>
@@ -29,7 +30,7 @@ function Section() {
     );
 }
 
-export default Section
+export default Section;
 
 const Wrap = styled.div`
     width: 100vw;
