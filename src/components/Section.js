@@ -17,10 +17,14 @@ function Section({ title, description, backgroundImg, leftBtn, rightBtn }) {
               <LeftButton>
                   {leftBtn}
               </LeftButton>
-
+              
+              {/* if the right button exists show the right button and if only the right but exists show the right button, otherwise 
+              show the left button only */}
+              {rightBtn &&
               <RightButton>
                   {rightBtn}
-            </RightButton> 
+              </RightButton> 
+               }
             
             </ButtonGroup>
           
