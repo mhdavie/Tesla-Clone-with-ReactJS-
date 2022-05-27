@@ -16,7 +16,7 @@ function Section({ title, description, backgroundImg, leftBtn, rightBtn }) {
         
   
         <Buttons>
-          
+
         <Fade bottom>
           
             <ButtonGroup>
@@ -45,6 +45,7 @@ function Section({ title, description, backgroundImg, leftBtn, rightBtn }) {
   export default Section;
   
   const Wrap = styled.div`
+    z-index: 10;
     width: 100vw;
     height: 100vh;
     background-size: cover;
