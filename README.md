@@ -36,3 +36,4 @@ This is a personal project for practicing React.Js, Styled Components and Redux.
 
 ![](/public/images/tesla01.png)
 
+![](/public/images/tesla02.png)
